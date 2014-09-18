@@ -37,6 +37,8 @@ After having calculated the average of each variable for activity and subject, t
 - fBodyAccJerkMag
 - fBodyGyroMag
 - fBodyGyroJerkMag.
+
+
 Features are normalized and bounded within [-1,1].
 
 
