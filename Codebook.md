@@ -1,3 +1,4 @@
+
 ==================================================================
 Human Activity Recognition Using Smartphones Dataset
 Version 1.0
@@ -15,7 +16,10 @@ Data from experiments that have been carried out with a group of 30 volunteers w
 Source data:
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
-The source data have been processed and the result is a table whose dimensions are 180x68 (30 subject and 6 activities recorded for each subject). The variable considered are mean and standard deviation of the following measurements:
+
+The source files (train, test, subject, activities )have been merged
+Only mean and standard deviation measurements features have been selected for the analysis (angles and meanfreq have been excluded). 
+After having calculated the average of each variable for activity and subject, the result is a table whose dimensions are 180x68 (30 subject and 6 activities recorded for each subject and the average of 66 variable). The variable considered are mean and standard deviation of the following measurements:
 tBodyAcc-XYZ
 tGravityAcc-XYZ
 tBodyAccJerk-XYZ
