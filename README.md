@@ -51,5 +51,5 @@ The specific packages used for the project are:
 7. Step: melt and cast mergeTrainTest to create tidy data set with the average of each variable for each activity and each subject:
          subject, activity, mean(measurement(1)-measurement(n))
 
-8. Step creation of txt with tidy dataset
+8. Step: creation of txt with tidy dataset
 
