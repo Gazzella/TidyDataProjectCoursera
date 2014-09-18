@@ -55,11 +55,18 @@ Activity
 	SITTING 
 	STANDING 
 	LAYING    factor
+	
+	
+	
 
 BodyAcc-mean-X	
 	Average – Numeric
+	
+	
 tBodyAcc-mean-Y	
 	Average – Numeric
+	
+	
 tBodyAcc-mean-Z	
 	Average – Numeric
 tGravityAcc-mean-X	
