@@ -11,7 +11,8 @@ into the local working directory:
 ~/Desktop/coursera/G&C data.
 The specific packages used for the project are:
    - library("reshape2”);
-   - library(“dplyr”).
+   - library(“dplyr”)
+   - library(“stringr”).
 
 1. Step: creation of the dataset in R from the following txt files:
 	 - ./UCI HAR Dataset/train/X_train.txt  as dfTrain_x for training measurements
@@ -26,14 +27,14 @@ The specific packages used for the project are:
 
 2. Step: little label customization:
 	 creation of a vector “label” from df “features”.  
-	 use of the gsub() function to eliminate parenthesis and make labels more readable, pleasing and make easier the 
+	 use of the gsub() and text function to eliminate parenthesis, spaces, ecc. and make labels more readable, pleasing and make easier the 
 	 column extraction
 
 
 3. Step: creation of complete training dataset “dfTrain_msd_as” with the selected measurements column:
 	 assignation of the labels vector to dfTrain_x df with the colnames() function.  
 	 selection of the column with the combination of select() and contains() functions
-	 (I selected “mean” and Standard deviation columns, I excluded meanfreq and angles measurements)
+	 (I selected “mean” and "std" columns, I excluded meanfreq and angles measurements)
 	 merged with cbind the following data set:
 		 dfsubjectTrain
 		 dfTrain_y
