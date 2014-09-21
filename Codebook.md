@@ -45,10 +45,10 @@ Features are normalized and bounded within [-1,1].
 DATA DICTIONARY
 
 
-1) subject; volunteers for the experiment
+1. subject; volunteers for the experiment
 	- 1..30 (Integer)           
 
-2) Activity; Activity performed by each subject 
+2. Activity; Activity performed by each subject 
 	- WALKING
 	- WALKING_UPSTAIRS 
 	- WALKING_DOWNSTAIRS 
@@ -57,130 +57,67 @@ DATA DICTIONARY
 	- LAYING   (factors)
 	
 
-3) tBodyAcc-mean-X; Average (Numeric)
-
-4) tBodyAcc-mean-Y; Average (Numeric)
-
-5) tBodyAcc-mean-Z	;	Average	(Numeric)
-
-6) tGravityAcc-mean-X	;	Average	(Numeric)
-
-7) tGravityAcc-mean-Y	;	Average	(Numeric)
-
-8) tGravityAcc-mean-Z	;	Average	(Numeric)
-
-9) tBodyAccJerk-mean-X	;	Average	(Numeric)
-
-10) tBodyAccJerk-mean-Y	;	Average	(Numeric)
-
-11) tBodyAccJerk-mean-Z	;	Average	(Numeric)
-
-12) tBodyGyro-mean-X	;	Average	(Numeric)
-
-13) tBodyGyro-mean-Y	;	Average	(Numeric)
-
-14) tBodyGyro-mean-Z	;	Average	(Numeric)
-
-15) tBodyGyroJerk-mean-X	;	Average	(Numeric)
-
-16) tBodyGyroJerk-mean-Y	;	Average	(Numeric)
-
-17) tBodyGyroJerk-mean-Z	;	Average	(Numeric)
-
-18) tBodyAccMag-mean	;	Average	(Numeric)
-
-19) tGravityAccMag-mean	;	Average	(Numeric)
-
-20) tBodyAccJerkMag-mean	;	Average	(Numeric)
-
-21) tBodyGyroMag-mean	;	Average	(Numeric)
-
-22) tBodyGyroJerkMag-mean	;	Average	(Numeric)
-
-23) fBodyAcc-mean-X	;	Average	(Numeric)
-
-24) fBodyAcc-mean-Y	;	Average	(Numeric)
-
-25) fBodyAcc-mean-Z	;	Average	(Numeric)
-
-26) fBodyAccJerk-mean-X	;	Average	(Numeric)
-
-27) fBodyAccJerk-mean-Y	;	Average	(Numeric)
-
-28) fBodyAccJerk-mean-Z	;	Average	(Numeric)
-
-29) fBodyGyro-mean-X	;	Average	(Numeric)
-
-30) fBodyGyro-mean-Y	;	Average	(Numeric)
-
-31) fBodyGyro-mean-Z	;	Average	(Numeric)
-
-32) fBodyAccMag-mean	;	Average	(Numeric)
-
-33) fBodyBodyAccJerkMag-mean	;	Average	(Numeric)
-
-34) fBodyBodyGyroMag-mean	;	Average	(Numeric)
-
-35) fBodyBodyGyroJerkMag-mean	;	Average	(Numeric)
-
-36) tBodyAcc-Standarddeviation-X	;	Average	(Numeric)
-
-37) tBodyAcc-Standarddeviation-Y	;	Average	(Numeric)
-
-38) tBodyAcc-Standarddeviation-Z	;	Average	(Numeric)
-
-39) tGravityAcc-Standarddeviation-X	;	Average	(Numeric)
-
-40) tGravityAcc-Standarddeviation-Y	;	Average	(Numeric)
-
-41) tGravityAcc-Standarddeviation-Z	;	Average	(Numeric)
-
-42) tBodyAccJerk-Standarddeviation-X	;	Average	(Numeric)
-
-43) tBodyAccJerk-Standarddeviation-Y	;	Average	(Numeric)
-
-44) tBodyAccJerk-Standarddeviation-Z	;	Average	(Numeric)
-
-45) tBodyGyro-Standarddeviation-X	;	Average	(Numeric)
-
-46) tBodyGyro-Standarddeviation-Y	;	Average	(Numeric)
-
-47) tBodyGyro-Standarddeviation-Z	;	Average	(Numeric)
-
-48) tBodyGyroJerk-Standarddeviation-X	;	Average	(Numeric)
-
-49) tBodyGyroJerk-Standarddeviation-Y	;	Average	(Numeric)
-
-50) tBodyGyroJerk-Standarddeviation-Z	;	Average	(Numeric)
-
-51) tBodyAccMag-Standarddeviation	;	Average	(Numeric)
-
-52) tGravityAccMag-Standarddeviation	;	Average	(Numeric)
-
-53) tBodyAccJerkMag-Standarddeviation	;	Average	(Numeric)
-
-54) tBodyGyroMag-Standarddeviation	;	Average	(Numeric)
-
-55) tBodyGyroJerkMag-Standarddeviation	;	Average	(Numeric)
-
-56) fBodyAcc-Standarddeviation-X	;	Average	(Numeric)
-
-57) fBodyAcc-Standarddeviation-Y	;	Average	(Numeric)
-
-58) fBodyAcc-Standarddeviation-Z	;	Average	(Numeric)
-
-59) fBodyAccJerk-Standarddeviation-X;	Average	(Numeric)
-
-60) fBodyAccJerk-Standarddeviation-Y	;	Average	(Numeric)
-
-61) fBodyAccJerk-Standarddeviation-Z	;	Average	(Numeric)
-
-62) fBodyGyro-Standarddeviation-X	;	Average	(Numeric)
-
-63) fBodyGyro-Standarddeviation-Y	;	Average	(Numeric)
-
-64) fBodyGyro-Standarddeviation-Z	;	Average	(Numeric)
-
-65) fBodyAccMag-Standarddeviation	;	Average	(Numeric)
-
-66) fBodyBodyAccJerkMag-Standarddeviation	;	Average	(Numeric)
+3.	tbodyaccmeanx	 ; Average (Numeric)
+4.	tbodyaccmeany	 ; Average (Numeric)
+5.	tbodyaccmeanz	 ; Average (Numeric)
+6.	tgravityaccmeanx	 ; Average (Numeric)
+7.	tgravityaccmeany	 ; Average (Numeric)
+8.	tgravityaccmeanz	 ; Average (Numeric)
+9.	tbodyaccjerkmeanx	 ; Average (Numeric)
+10.	tbodyaccjerkmeany	 ; Average (Numeric)
+11.	tbodyaccjerkmeanz	 ; Average (Numeric)
+12.	tbodygyromeanx	 ; Average (Numeric)
+13.	tbodygyromeany	 ; Average (Numeric)
+14.	tbodygyromeanz	 ; Average (Numeric)
+15.	tbodygyrojerkmeanx	 ; Average (Numeric)
+16.	tbodygyrojerkmeany	 ; Average (Numeric)
+17.	tbodygyrojerkmeanz	 ; Average (Numeric)
+18.	tbodyaccmagmean	 ; Average (Numeric)
+19.	tgravityaccmagmean	 ; Average (Numeric)
+20.	tbodyaccjerkmagmean	 ; Average (Numeric)
+21.	tbodygyromagmean	 ; Average (Numeric)
+22.	tbodygyrojerkmagmean	 ; Average (Numeric)
+23.	fbodyaccmeanx	 ; Average (Numeric)
+24.	fbodyaccmeany	 ; Average (Numeric)
+25.	fbodyaccmeanz	 ; Average (Numeric)
+26.	fbodyaccjerkmeanx	 ; Average (Numeric)
+27.	fbodyaccjerkmeany	 ; Average (Numeric)
+28.	fbodyaccjerkmeanz	 ; Average (Numeric)
+29.	fbodygyromeanx	 ; Average (Numeric)
+30.	fbodygyromeany	 ; Average (Numeric)
+31.	fbodygyromeanz	 ; Average (Numeric)
+32.	fbodyaccmagmean	 ; Average (Numeric)
+33.	fbodybodyaccjerkmagmean	 ; Average (Numeric)
+34.	fbodybodygyromagmean	 ; Average (Numeric)
+35.	fbodybodygyrojerkmagmean	 ; Average (Numeric)
+36.	tbodyaccstandarddeviationx	 ; Average (Numeric)
+37.	tbodyaccstandarddeviationy	 ; Average (Numeric)
+38.	tbodyaccstandarddeviationz	 ; Average (Numeric)
+39.	tgravityaccstandarddeviationx	 ; Average (Numeric)
+40.	tgravityaccstandarddeviationy	 ; Average (Numeric)
+41.	tgravityaccstandarddeviationz	 ; Average (Numeric)
+42.	tbodyaccjerkstandarddeviationx	 ; Average (Numeric)
+43.	tbodyaccjerkstandarddeviationy	 ; Average (Numeric)
+44.	tbodyaccjerkstandarddeviationz	 ; Average (Numeric)
+45.	tbodygyrostandarddeviationx	 ; Average (Numeric)
+46.	tbodygyrostandarddeviationy	 ; Average (Numeric)
+47.	tbodygyrostandarddeviationz	 ; Average (Numeric)
+48.	tbodygyrojerkstandarddeviationx	 ; Average (Numeric)
+49.	tbodygyrojerkstandarddeviationy	 ; Average (Numeric)
+50.	tbodygyrojerkstandarddeviationz	 ; Average (Numeric)
+51.	tbodyaccmagstandarddeviation	 ; Average (Numeric)
+52.	tgravityaccmagstandarddeviation	 ; Average (Numeric)
+53.	tbodyaccjerkmagstandarddeviation	 ; Average (Numeric)
+54.	tbodygyromagstandarddeviation	 ; Average (Numeric)
+55.	tbodygyrojerkmagstandarddeviation	 ; Average (Numeric)
+56.	fbodyaccstandarddeviationx	 ; Average (Numeric)
+57.	fbodyaccstandarddeviationy	 ; Average (Numeric)
+58.	fbodyaccstandarddeviationz	 ; Average (Numeric)
+59.	fbodyaccjerkstandarddeviationx	 ; Average (Numeric)
+60.	fbodyaccjerkstandarddeviationy	 ; Average (Numeric)
+61.	fbodyaccjerkstandarddeviationz	 ; Average (Numeric)
+62.	fbodygyrostandarddeviationx	 ; Average (Numeric)
+63.	fbodygyrostandarddeviationy	 ; Average (Numeric)
+64.	fbodygyrostandarddeviationz	 ; Average (Numeric)
+65.	fbodyaccmagstandarddeviation	 ; Average (Numeric)
+66.	fbodybodyaccjerkmagstandarddeviation	 ; Average (Numeric)
