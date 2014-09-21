@@ -1,5 +1,6 @@
 library("reshape2")
 library("dplyr")
+library("stringr")
 setwd("~/Desktop/coursera/G&C data")
 
 ####STEP 1######
@@ -25,15 +26,17 @@ act_label= read.table('./UCI HAR Dataset/activity_labels.txt', header = FALSE, f
 ### create a vectors of label for the columns of the dataset 
 label <- as.vector(t(feature$V2))
 ### customize labels just to make them more readable and pleasing 
-label2 <- gsub("\\(\\)", "", label, perl=TRUE)
-label3 <- gsub("std", "Standard deviation", label2, perl=TRUE)
+label<-str_trim(tolower(label))
+label2 <- gsub("-", "", label, perl=TRUE)
+label2 <- gsub("\\(\\)", "", label2, perl=TRUE)
+label3 <- gsub("std", "standarddeviation", label2, perl=TRUE)
 
 ####STEP 3######
 ##training###
 ###assign labels to columns
 colnames(dfTrain_x) <- label3
 ###select column std e mean (I have excluded meanFreq and angles)
-dfTrain_xmsd <- dfTrain_x %>% select(contains("mean"), contains("Standard deviation"), -contains("Freq"), -contains("angle"))
+dfTrain_xmsd <- dfTrain_x %>% select(contains("mean"), contains("standarddeviation"), -contains("freq"), -contains("angle"))
 ###merge all three dataframes together
 dfTrain_msd_as <- cbind(dfsubjectTrain,dfTrain_y,dfTrain_xmsd)
 
@@ -42,7 +45,7 @@ dfTrain_msd_as <- cbind(dfsubjectTrain,dfTrain_y,dfTrain_xmsd)
 ##assign columns names 
 colnames(dfTest_x) <- label3
 ##select columns means standard deviation and excluded angles and meanFreq
-dfTest_xmsd <- dfTest_x %>% select(contains("mean"), contains("Standard deviation"), -contains("Freq"), -contains("angle"))
+dfTest_xmsd <- dfTest_x %>% select(contains("mean"), contains("standarddeviation"), -contains("freq"), -contains("angle"))
 ###merge subject activity and test measurement data
 dfTest_msd_as <- cbind(dfsubjectTest,dfTest_y,dfTest_xmsd)
 
@@ -65,4 +68,5 @@ averTT <- dcast(mergeTTmelt, subject  +  Activity ~ variable, mean)
 ####STEP 8######
 ###write txt in a external file 
 write.table(averTT, file = './tidydataCP.txt', row.name=FALSE)
+
 
